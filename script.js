@@ -8,7 +8,8 @@ function compute()
     var rate=document.getElementById("rate").value;
     var years= document.getElementById("years").value;
     var interest =(principal * years * rate)/100;
-    var year =new Date().getFullYear()+parseInt(years);
+    var date =new Date()
+    var year= date.getFullYear()+parseInt(years);
         
     var result = document.getElementById("result");
     output = "If you deposit <mark>" + principal + "</mark>,<br>"
