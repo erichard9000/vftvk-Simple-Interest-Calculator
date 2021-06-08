@@ -11,7 +11,7 @@ function compute()
         "in the year <mark>" + yearInTheFuture + "</mark>";
 function updateRate(){
     var rateval= document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    document.getElementById("rate_val").innerHTML=rateval;
 
     function validateAmount() {
         var principal = document.getElementById("principal").value;
