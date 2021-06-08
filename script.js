@@ -18,8 +18,10 @@ function compute()
             + "in the year <mark>" + year + "</mark>";
     result.innerHTML = output;
 function updateRate(){
-    var rateval= document.getElementById("rate").value;
-    document.getElementById("rate_val").innerHTML=rateval;
+    var ratenum= document.getElementById("rate").value;
+    var output = document.getElementById("rate_val");
+    var percentage = ratenum.value + "%";
+    output.innerHTML = percentage;
 
     function validateAmount() {
         var principal = document.getElementById("principal").value;
