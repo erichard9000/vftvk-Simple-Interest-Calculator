@@ -16,7 +16,7 @@ function updateRate(){
     function validateAmount() {
         var principal = document.getElementById("principal").value;
         var GreaterThanZero = parseInt(principal) > 0;
-        if (!GreaterThanZero) {
+        if (!=GreaterThanZero) {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
